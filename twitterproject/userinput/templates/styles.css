@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+
+
+#jbg {
+    background-color: #F55353;
+    color: #FFFFFF;
+    margin: 20px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+p {
+    background-color: transparent;
+    color: #07245b;
+    margin: 15px;
+    font-size: 18px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+body {
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+label {
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 10px;
+    background-color: #9E5A63;
+    color: #FFFFFF;
+    font-family: 'Miriam Libre', sans-serif;
+}
+.navbar-brand {
+    text-transform: uppercase;
+    color: #002566;
+}
+
+#navvy {
+    text-decoration: none solid;
+    color: #0f096b;
+    margin: 15px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+#navvy:hover {
+    text-decoration: none currentcolor solid;
+    color: #99beff;
+}
+
+#ln:hover {
+    text-decoration: none currentcolor solid;
+    color: #99beff;
+}
+
+jumbotron {
+    background-color: transparent;
+    color: transparent;
+    margin: 15px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+.form-text {
+    color: #e6efff;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+#footer {
+    margin: 0px;
+    background-color: #d0d6e0;
+    color: #ccdfff;
+    font-size: 12px;
+    font-family: 'Miriam Libre', sans-serif;
+    text-align: center;
+}

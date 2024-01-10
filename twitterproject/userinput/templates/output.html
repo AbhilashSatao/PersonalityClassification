@@ -1,0 +1,260 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{data}}</h1>
+    
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+<!--<link rel="stylesheet" href="styles1.css">-->
+    <title>MBTI Text Classifier</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+
+
+#jbg {
+    background-color: transparent;
+    color: #000000;
+    margin: 20px;
+    font-family: 'Miriam Libre', sans-serif;
+    font-color: #000000 ;
+}
+p {
+    background-color: transparent;
+    color: #07245b;
+    margin: 15px;
+    font-size: 18px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+
+
+
+
+
+body {
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+article {
+
+
+  float: right;
+ position : absolute;
+ top : 175px;
+ right :150px;
+
+  padding: 20px;
+  width: 500px;
+  background-color: #f1f1f1;
+  height: 350px; /* only for demonstration, should be removed */
+}
+
+h3 {
+ display : inline;
+}
+
+label {
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 10px;
+    background-color: #000000;
+    color: #FFA500;
+    font-family: 'Miriam Libre', sans-serif;
+}
+.navbar-brand {
+    text-transform: uppercase;
+    color: #002566;
+}
+
+#navvy {
+    text-decoration: none solid;
+    color: #0f096b;
+    margin: 15px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+#navvy:hover {
+    text-decoration: none currentcolor solid;
+    color: #99beff;
+}
+
+#ln:hover {
+    text-decoration: none currentcolor solid;
+    color: #99beff;
+}
+
+jumbotron {
+    background-color:;
+    color: #FFFFFF;
+    margin: 15px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+.form-text {
+    color: #e6efff;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+#footer {
+    margin: 0px;
+    background-color: #d0d6e0;
+    color: #ccdfff;
+    font-size: 12px;
+    font-family: 'Miriam Libre', sans-serif;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat";
+  background-color: #000000
+   background-size: 400% 400%;
+  <!--  animation: bganimation 15s infinite;-->
+  }
+  .text{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 350px 0;
+    font-size: 22px;
+  }
+  
+  @keyframes bganimation {
+    0%{
+      background-position: 0% 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }				
+    100%{
+      background-position: 0% 50%;
+    }
+  }
+
+
+table, th, td {
+   border: 1px solid black;
+  }
+
+</style>
+    
+</head>
+<body id="bg">
+    
+<div class="navbar navbar-static-top">
+    
+       <center> <h3>Personality Classification Using Social Media Posts [@Twitter Tweets ]</h3> </center>
+</div>
+
+
+<div class="container-fluid">
+    <div class="jumbotron" id="jbg">
+        <label class="text-center" style="font-size:22px; ">MBTI personality type prediction:</label>
+<br>
+        <body class="text-center" style="font-size:30px;">{{data}}
+      </body>
+
+    </div>
+<br>
+
+<div class="traits">
+<p>I=Introversion</p>
+<p>E=Extroversion</p>
+<p>S=Sensing</p>
+<p>N=Intuition</p>
+<p>T=Thinking</p>
+<p>F=Feeling</p>
+<p>J=Judging</p>
+<p>P=Perceiving</p>
+</div>
+
+ <article>
+
+<table style='text-align: center' cellpadding="25" >
+ 
+  <tbody>
+   <tr>
+        <td><a href='https://www.crystalknows.com/myers-briggs/INTJ' target='_blank'>INTJ</a></td>
+ 	<td><a href='https://www.crystalknows.com/myers-briggs/INTP' target='_blank'>INTP</a></td>
+	<td><a href='https://www.crystalknows.com/myers-briggs/ENTJ' target='_blank'>ENTJ</a></td>
+	<td><a href='https://www.crystalknows.com/myers-briggs/ENTP' target='_blank'>ENTP</a></td>
+  
+	
+   </tr>
+ <tr>
+    
+
+	 <td><a href='https://www.crystalknows.com/myers-briggs/INFJ' target='_blank'>INFJ</a></td>
+ 	<td><a href='https://www.crystalknows.com/myers-briggs/INFP' target='_blank'>INFP</a></td>
+	<td><a href='https://www.crystalknows.com/myers-briggs/ENFJ' target='_blank'>ENFJ</a></td>
+	<td><a href='https://www.crystalknows.com/myers-briggs/ENFP' target='_blank'>ENFP</a></td>
+	
+   </tr>
+ <tr>
+   <td><a href='https://www.crystalknows.com/myers-briggs/ISTJ' target='_blank'>ISTJ</a></td>
+ 	<td><a href='https://www.crystalknows.com/myers-briggs/ISFJ' target='_blank'>ISFJ</a></td>
+	<td><a href='https://www.crystalknows.com/myers-briggs/ESTJ' target='_blank'>ESTJ</a></td>
+	<td><a href='https://www.crystalknows.com/myers-briggs/ESFJ' target='_blank'>ESFJ</a></td>
+      
+   </tr>
+ <tr>
+ <td><a href='https://www.crystalknows.com/myers-briggs/ISTP' target='_blank'>ISTP</a></td>
+ 	<td><a href='https://www.crystalknows.com/myers-briggs/ISFP' target='_blank'>ISFP</a></td>
+	<td><a href='https://www.crystalknows.com/myers-briggs/ESTP' target='_blank'>ESTP</a></td>
+	<td><a href='https://www.crystalknows.com/myers-briggs/ESFP' target='_blank'>ESFP</a></td>
+   </tr>
+
+  </tbody>
+ </table>
+
+    
+  
+  </article>
+
+
+
+
+    <div>
+      <!--  <p style="font-size:20px;"> See the Sixteen Combination👉 <a href="https://www.16personalities.com/personality-types" target="_blank"
+                                                        id="ln">Click Here!</a></p>-->
+    </div>
+<div>
+<!--<a href="pimage.jpg" target="">See Image</a> -->
+</div>
+    <div>
+        <p style="font-size:20px;"> Learn more about👉 <a href="https://www.16personalities.com/personality-types" target="_blank"
+                                                        id="ln">Myer-Briggs Personality Types!</a></p>
+
+
+    </div>
+<!--
+    <img src="pimage.jpg" alt="personality classification img"width="300">
+    <img src="simage.jpg" alt="sdfafsfs"width="600">
+-->
+
+    <div class="navbar navbar-fixed-bottom">
+        
+    </div>
+</div>
+</body>
+</html>

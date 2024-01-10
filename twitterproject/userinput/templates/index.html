@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI classifier</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Peddana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&display=swap');
+
+#jbg {
+    background-color: transparent;
+    color: #838b99 ;
+    margin: 20px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+p {
+    background-color:#368BC1;
+    color: #ffffff;
+    margin: 15px;
+    font-size: 18px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+body {
+    
+    background-color: #DAF0FF;
+    
+}
+
+
+
+
+
+.container
+{
+background-color:transparent ;
+}
+label{
+    font-weight: bold;
+    }
+
+.navbar {
+    padding: 10px;
+    background-color: #2554C7;
+    color: #FFFFFF;
+    font-family: 'Miriam Libre', sans-serif;
+}
+.navbar-brand {
+    text-transform: uppercase;
+    color: #002566;
+}
+
+#navvy {
+    text-decoration: none solid;
+    color: #0f096b;
+    margin: 15px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+#navvy:hover {
+    text-decoration: none currentcolor solid;
+    color: #99beff;
+}
+
+#ln:hover {
+    text-decoration: none currentcolor solid;
+    color: #99beff;
+}
+
+jumbotron {
+    background-color: #838b99;
+    color:  #838b99;
+    margin: 15px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+.form-text {
+    color: #838b99;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+#footer {
+    margin: 0px;
+    background-color: #d0d6e0;
+    color: #ccdfff;
+    font-size: 12px;
+    font-family: 'Miriam Libre', sans-serif;
+    text-align: center;
+}
+</style>
+</head>
+<body id="bg">
+<div class="navbar navbar-static-top">
+<!--
+ <a class="navbar-brand"href="."><img src="twee.gif" width="150" height="150"></a>
+    -->
+   
+    <center><h2>Personality Classification Using Social Media Post [ @Twitter Tweets ]</h2></center>
+    
+</div>
+<div class="container-fluid">
+   <center><p>This classifier takes an input  twitter user id or username and uses machine learning to match it to an MBTI
+    personality type.</p> </center> 
+</div>
+<br>
+
+<div class="container">
+
+    <center><label><b><h2>Enter the username of Twitter user handle</h2></b></label></center>
+       
+
+            <form action="predict" style="margin: auto; width: 220px;" method="POST">
+                {% csrf_token %}
+                <br>
+                <center><input style="font-size:25px; " type="text" id="username" name="username" placeholder="Username" pattern="^@[A-Za-z0-9_]{1,15}$" required>
+                <input style="font-size:25px ;" type="submit" value="Predict"></center>
+            </form>
+</div>
+<!--
+<a class="navbar-brand"href="."><img src="globe.gif" width="300" height="300" align = "center"></a>
+-->
+<br>
+</body>
+</html>
